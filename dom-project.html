@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM project</title>
+</head>
+<body>
+  <p>Youtube Scribe Button</p>
+   <button onclick="
+   subCribe();
+   "
+   class="button-js">
+   Subcribe
+   </button>
+  <script>
+    function subCribe(){
+      const buttonClick= document.querySelector('.button-js');
+
+   if(buttonClick.innerHTML === 'Subcribe'){
+    buttonClick.innerHTML= 'Subcribed';
+   }else {
+    buttonClick.innerHTML='Subcribe';
+   }
+    }
+  </script>
+</body>
+</html>

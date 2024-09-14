@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculate</title>
+  <p>Amazon shiping calculator</p>
+
+
+  <input  placeholder="cost of product" class="js-cost-calculator"
+  onkeydown="clicks(event);">
+
+
+
+  <button onclick="
+  costCalulator();
+  " 
+  >calculate</button>
+
+
+  <p class="js-Calculated"></p>
+
+  <input type="text" placeholder="Text" class="js-onkey-pressed" onkeyup="myfuction()">
+  <p class="js-printon"></p>
+
+
+  <script>
+    function myfuction(){
+       const inputString = document.querySelector('.js-onkey-pressed');
+       let stringG=inputString.value;
+       document.querySelector('.js-printon').innerHTML=`${stringG}`;
+    }
+
+    function clicks(event){
+      if(event.key === 'Enter'){
+        costCalulator();
+      }
+    }
+    function costCalulator(){
+      const inputcost = document.querySelector('.js-cost-calculator');
+     let cost = parseFloat(inputcost.value);
+      if(cost<40){
+        cost = 10+cost;
+        
+      }
+      let costC=cost.toFixed(2);
+      console.log(costC);
+      document.querySelector('.js-Calculated').innerHTML = `$${costC}`;
+    }
+ 
+  </script>
+</body>
+</html>
+</body>
+</html>

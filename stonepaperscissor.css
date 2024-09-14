@@ -1,0 +1,68 @@
+*{
+  background-color:rgb(86, 81, 81);
+}
+.title{
+  font-size: 55px;
+}
+.rock{
+  height:170px;
+  width:170px;
+  border-style: solid;
+  border-color: aliceblue;
+  border-radius: 80px;
+}
+.rockimg{
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.paper{
+   margin-left: 10px; 
+  height:170px;
+  width:170px;
+  border-style: solid;
+  border-color: aliceblue;
+  border-radius: 80px;
+}
+.paperimg{
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  margin-left: 10px;
+
+}
+
+.scissor{
+  margin-left: 10px; 
+  height:170px;
+  width:170px;
+  border-style: solid;
+  border-color: aliceblue;
+  border-radius: 80px;
+}
+.scissorimg{
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+}
+.resultt{
+  font-size: 50px;
+  font-weight: bolder;
+}
+.selection{
+  font-size: 30px;
+}
+
+.scoreDisplay{
+  margin-top: 70px;
+  font-size: 50px;
+
+}
+.reset{
+  height: 55px;
+  width: 110px;
+  border-style: solid;
+  background-color: white;
+}

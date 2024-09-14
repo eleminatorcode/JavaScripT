@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="prime.js"></script>
+    <button onclick="
+    alert('added to cart');
+    cartQuantity++;
+    console.log(`cartQuantity:${cartQuantity}`);">hello</button>
+    <button onclick="
+    cartQuantity+=4;
+    console.log(`cartQuantity:${cartQuantity}`);">
+      +4
+    </button>
+    <p>Paragraph of Text hello</p>
+    <button onclick=
+    "
+    if(cartQuantity>0){
+    cartQuantity-=2;
+    }
+    else{
+      console.log('Invalid cartQuantity');
+    }
+    console.log(`cartQuantity:${cartQuantity}`)">
+    -2
+    </button>
+    <script>
+      let cartQuantity=0;
+    </script>
+</body>
+</html>

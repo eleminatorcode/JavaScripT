@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+<body>
+  <script>
+    const product ={
+      name :'Ramashish Singh',
+      skils : 3,
+    };
+    console.log(product.skils+product.name);
+    console.log(typeof product);
+    console.log(JSON.stringify(product));
+    const jsonString= JSON.stringify(product);
+    console.log(JSON.parse(jsonString));
+    // More in the Objects
+//Destructuring of object used to take out properties of an object.
+    const object1={
+      message: 'Great job',
+      price : 799
+    };
+    const {message,price}=object1;
+    console.log(message);
+    console.log(price);
+
+
+    const object2= object1;
+    object1.message='Having Great time';
+    console.log(object1.message);
+
+
+
+  const object3={
+    message 
+  };
+  console.log(object3.message);
+  </script>
+</body>
+</html>

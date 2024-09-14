@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>array-loop</title>
+</head>
+<body>
+  <p>To do list </p>
+  <input type="text" placeholder="Todo name" class="todo">
+  <input type="date" name="" class="date-todo">
+  <button class="js-add" onclick="addList();">Add</button>
+   
+  <div class="js-todo-list" ></div>
+
+
+  <script>
+    const todoLists = [{name:'make dinner',
+    dueDate:'20-09-2026',
+
+    },{ name:'watch tn',dueDate:'24-09-2030'}];
+    
+
+      renderTodo();
+
+    function renderTodo(){
+      let todoListHTML='';
+      for(let i=0 ; i<todoLists.length;i++){
+       const todos= todoLists[i];
+       const {name} = todos;
+       const {dueDate}= todos;
+       const html= `<p>${name} ${dueDate}<button onclick="
+        todoLists.splice(${i},1);
+        renderTodo();
+        ">Delete</button></p>`;
+        todoListHTML += html;
+      }
+      console.log(todoListHTML);
+      document.querySelector('.js-todo-list').innerHTML= todoListHTML;
+    }
+
+   function addList(){
+    const todosL= document.querySelector('.todo');
+    const name= todosL.value;
+    const duesInput= document.querySelector('.date-todo');
+    const dueDate=duesInput.value;
+    
+  todoLists.push({name,
+    dueDate});
+  console.log(todoLists);
+
+    todosL.value='';
+   renderTodo();
+   }
+  </script>
+</body>
+</html>
