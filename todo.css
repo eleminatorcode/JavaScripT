@@ -1,0 +1,33 @@
+.title{
+  font-size: 55px;
+}
+
+.js-todo-list,.js-todo-input{
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  row-gap:10px ;
+  column-gap: 10px;
+  align-items: center;
+}
+.js-todo-input{
+  align-items: stretch;
+  margin-bottom: 10px;
+}
+.todo,.date-todo{
+  padding: 6px;
+}
+.js-add{
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor:pointer;
+}
+.delete-todo{
+  background-color:darkred;
+  padding: 6px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
